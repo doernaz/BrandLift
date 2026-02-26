@@ -18,5 +18,6 @@ jobs:
           host: 147.93.107.129
           username: root
           key: ${{ secrets.SSH_PRIVATE_KEY }}
+          source: "./*"  # This tells it to grab EVERYTHING in the folder
           target: "/var/www/BrandLift"
-          strip_components: 
+          strip_components: 0 
